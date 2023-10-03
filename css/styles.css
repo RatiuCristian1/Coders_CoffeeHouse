@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Merienda+One|Open+Sans&display=swap');
 
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	font-family: 'Open Sans', Arial, sans-serif;
 	margin: 0;
 	background-color: whitesmoke;
 }
+
+html {
+	scroll-behavior: smooth;
+}  
 
 h1,h2,h3 {
 	font-family: 'Merienda One', 'Brush Script MT', cursive;
@@ -37,6 +47,7 @@ header {
 	background: url('https://codeinstitute.s3-eu-west-1.amazonaws.com/CSSEssentials/coffee-beans.jpg') center center / cover no-repeat fixed;
 }
 
+
 .text-white {
 	color: #FFFFFF;
 }
@@ -46,7 +57,38 @@ header {
 }
 
 #home {
-    background-image: url('https://codeinstitute.s3-eu-west-1.amazonaws.com/CSSEssentials/coffeehouse.jpg');
+    background-image: url('/images/coffee-cup-5258877_640.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 75vh;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.vertical-center {
+    position: relative;
+    top: 500px;
+}
+
+@media  screen and (max-width: 800px) {
+	#home {
+		background-image: url('/images/coffee-cup-5258877_640.jpg');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 100%;
+	}
+
+	.vertical-center {
+		position: relative;
+		top: 400px;
+		height: 200px;
+	}
+}
+
+.black-background {
+	background-color: black;
 }
 
 .page-header {
@@ -130,10 +172,6 @@ img {
     top: -15px;
 }
 
-.vertical-center {
-    position: relative;
-    top: 30%;
-}
 
 .one-third-width-column {
     width: 33.33%;
@@ -346,4 +384,31 @@ label {
     height: 100%;
     width: 100%;
     border: none;
+}
+
+@media screen and (max-width: 800px) {
+	.reasons-box {
+		height: 100%;
+	}
+
+	.home--hero--image {
+		width: 100%;
+		height: 100%;
+		border: 1px solid red;
+		margin: 20px 5px;
+	}
+
+	.two-thirds-width-column {
+		width: 75%;
+		height: 100%;
+		/* display: inline-block; */
+		border: 1px solid red;
+	}
+
+	.text-center {
+		display: flex;
+		/* flex-direction: column; */
+		justify-content: space-between;
+		height: 350px;
+	}
 }
