@@ -46,6 +46,9 @@ header {
 	height: 650px;
 	margin-bottom: 80px;
 	background: url('/images/coffee-background.jpg') center center / cover no-repeat fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 
@@ -177,53 +180,89 @@ img {
 	margin: 2%;
 }
 
-#coffee-box {
-	background-color: brown;
+.coffee--anchor {
+	text-decoration: none;
+}
+
+/* #coffee-box {
+	background-color: #6F4E37;
     position: relative;
+	padding: 1.5em 0;
+	width: 250px;
+	height: auto;
     left: 70px;
     top: -15px;
+	color: #FFFFFF;
+	margin-bottom: 2rem;
 }
 
 #tea-box {
-	background-color: #6f4e37;
+	background-color: #13521f;
 	position: relative;
-	/* z-index: 1; */
+	padding: 1.5em 0;
+	width: 250px;
+	height: auto;
+	color: #FFFFFF;
 }
 
 #cold-drinks-box {
-	background-color: chocolate;
+	background-color: rgb(143, 126, 114);
     position: relative;
+	width: 250px;
+	height: auto;
+	color: #FFFFFF;
     right: 70px;
     top: -15px;
-}
+	z-index: ;
+} */
 
-
-.one-third-width-column {
-    width: 33.33%;
-    display: inline-block;
-}
-
-.two-thirds-width-column {
-    width: 66.66%;
-    display: inline-block;
-}
-
-.reasons-box {
-	padding: 10px 5px 25px 5px;
-	border-radius: 8px;
-	width: 100%;
-	margin: 2%;
-	background-color: chocolate;
+#coffee-box {
+    background-color: #6F4E37;
     position: relative;
-    left: 20%;
-    top: 30px;
+    padding: 1.5em 0;
+    width: 250px;
+    height: auto;
+    left: 400px;
+    top: 0; /* Remove the negative top value */
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+    z-index: 1;
 }
+
+#tea-box {
+    background-color: #13521f;
+    position: relative;
+    padding: 1.5em 0;
+    width: 250px;
+    height: auto;
+    color: #FFFFFF;
+    top: -15px; /* Adjust top position */
+    z-index: 2; /* Set a higher z-index to place it above coffee-box */
+    margin-left: 320px; /* Adjust the margin-left to create space for coffee-box */
+}
+
+
+#cold-drinks-box {
+	background-color: rgb(143, 126, 114);
+    position: relative;
+    padding: 1.5em 0;
+    width: 250px;
+    height: auto;
+    right: 70px;
+    top: 0;
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+    z-index: 1
+}
+
+
 
 .drinks-box {
-	width: 33%;
 	margin: 1rem 0;
 	display: inline-block;
+
 }
+
 
 /* padding to allow for fixed footer */
 /* #contact {
@@ -248,9 +287,6 @@ img {
 	float: right;
 }
 
-.spacer {
-    clear: both;
-}
 
 .contact-box-center {
     width: 250px;
@@ -465,6 +501,7 @@ label {
 	display: flex;
     justify-content: space-between;
     border: none;
+	margin-bottom: 150px;
 }
 
 .bar {
@@ -510,12 +547,13 @@ label {
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		height: 950px;
+		height: 900px;
 	}
 
 	.drinks-box {
-		width: 55%;
+		width: 100%;
 		padding: 20px 0;
+		/* margin: 0 auto; */
 		
 	}
 
@@ -529,16 +567,64 @@ label {
 	}
 
 	#tea-box {
-		background-color: #6f4e37;
+		background-color: #54a364;
 		position: relative;
 		top: -15px;
 		/* z-index: 1; */
+	}
+
+	#coffee-box {
+		background-color: #6F4E37;
+		position: relative;
+		padding: 1.5em 0;
+		width: 250px;
+		height: auto;
+		left: 70px;
+		top: -15px;
+		color: #FFFFFF;
+		margin-bottom: 2rem;
+	}
+
+	#cold-drinks-box {
+		background-color: rgb(37, 32, 28);
+		position: relative;
+		color: #FFFFFF;
+		padding: 1.5em 0;
+		width: 250px;
+		height: auto;
+		right: 70px;
+		top: -15px;
+		margin-top: 2rem;
 	}
 
 	.drinks--menu--h2 {
 		margin-bottom: 1em;
 		margin-top: 0.75em;
 	}
+	.bar {
+		width: 15px;
+		height: 2500px;
+		background-color: aliceblue;
+		/* border: 1px solid rgb(87, 86, 86); */
+		position: relative;
+		/* left: 15px; */
+		border: none;
+		/* rotate: 30deg;
+		top: -200px;
+		right: 500px; */
+		
+	}
+	
+	.bar1,
+	.bar--last {
+		background-color: transparent;
+	}
+
+	/* .coffee-box {
+		margin: 0 auto;
+		border: 1px solid blue;
+		padding: 50px;
+	} */
 
 
 }
