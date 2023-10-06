@@ -107,10 +107,10 @@ header {
 	background-color: black;
 }
 
-.page-header {
-	height: 50vh;
+/* .page-header {
+	height: 35vh;
 	background: center 75% / cover no-repeat;
-}
+} */
 
 /* .form-page-header {
 	 background-image: url('https://codeinstitute.s3-eu-west-1.amazonaws.com/CSSEssentials/table.jpg') 
@@ -174,14 +174,40 @@ small {
 	}
 }
 
-img {
+.coffee--container {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+.coffee--images--container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 1.5em;
+	border-bottom: 1px solid red;
+}
+
+.text-container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.5em;
+}
+
+.coffee--images {
 	border-radius: 8px;
-	width: 96%;
-	margin: 2%;
+	width: 100%;
+	/* margin: 10px; */
+	/* padding: 20px; */
 }
 
 .coffee--anchor {
 	text-decoration: none;
+	cursor: pointer;
 }
 
 /* #coffee-box {
@@ -230,7 +256,7 @@ img {
 }
 
 #tea-box {
-    background-color: #13521f;
+    background-color: #54a364;
     position: relative;
     padding: 1.5em 0;
     width: 250px;
@@ -238,12 +264,12 @@ img {
     color: #FFFFFF;
     top: -15px; /* Adjust top position */
     z-index: 2; /* Set a higher z-index to place it above coffee-box */
-    margin-left: 320px; /* Adjust the margin-left to create space for coffee-box */
+    margin-left: 320px; 
 }
 
 
 #cold-drinks-box {
-	background-color: rgb(143, 126, 114);
+	background-color: rgb(37, 32, 28);
     position: relative;
     padding: 1.5em 0;
     width: 250px;
@@ -361,7 +387,7 @@ footer {
 	padding: 1em;
 	text-align: center;
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     right: 0;
 	z-index: 3;
@@ -570,6 +596,7 @@ label {
 		background-color: #54a364;
 		position: relative;
 		top: -15px;
+		right: 165px;
 		/* z-index: 1; */
 	}
 
