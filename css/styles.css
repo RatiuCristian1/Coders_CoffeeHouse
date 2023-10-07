@@ -210,6 +210,43 @@ small {
 	cursor: pointer;
 }
 
+
+@media screen and (min-width: 801px) {
+	.coffee--images--container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin: 1.5em;
+		border-bottom: 1px solid red;
+	}
+	
+	.coffee--images {
+		border-radius: 8px;
+		width: 520px;
+		height: auto;
+	}
+	
+	.text-container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 1.5em;
+	}
+	
+	/* Change the direction of every even (2n) container */
+	.coffee--images--container:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+	
+	/* Adjust image width for the even containers to prevent overflow */
+	.coffee--images--container:nth-child(even) .coffee--images {
+		width: auto;
+		max-width: 420px;
+	}
+}	
+	
+
 /* #coffee-box {
 	background-color: #6F4E37;
     position: relative;
