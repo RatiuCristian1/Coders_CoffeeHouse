@@ -186,8 +186,12 @@ small {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 1.5em;
 	border-bottom: 1px solid red;
+}
+
+#lemon-tea,
+#ice-tea {
+	height: 450px;
 }
 
 .text-container {
@@ -201,6 +205,7 @@ small {
 .coffee--images {
 	border-radius: 8px;
 	width: 100%;
+	margin: 1.5em;
 	/* margin: 10px; */
 	/* padding: 20px; */
 }
@@ -212,39 +217,65 @@ small {
 
 
 @media screen and (min-width: 801px) {
-	.coffee--images--container {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		margin: 1.5em;
-		border-bottom: 1px solid red;
+	.coffee--container {
+		margin: 2.5em auto;
+		width: 70%;
 	}
+
+    .coffee--images--container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+	#espresso3 {
+		height: 350px;
+	}
+
+    .coffee--images {
+        border-radius: 12px;
+        width: 520px;
+        height: auto;
+    }
+
+    .text-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5em;
+		font-size: 1.5em;
+    }
+
+    /* Change the direction of every even (2n) container */
+    .coffee--images--container:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    /* Adjust image width for the even containers to prevent overflow */
+    .coffee--images--container:nth-child(even) .coffee--images {
+        width: auto;
+        max-width: 420px;
+    }
+
+    /* Add borders to the coffee divs within the first row */
+    .coffee--images--container:nth-child(odd) {
+        border-left: 1px solid #5C6264;
+        border-bottom: 1px solid #5C6264;
+		border-bottom-left-radius: 30px;
+    }
+
+    /* Add borders to the coffee divs within the second row */
+    .coffee--images--container:nth-child(even) {
+        border-right: 1px solid #5C6264;
+        border-bottom: 1px solid #5C6264;
+		border-bottom-right-radius: 30px;
+		border-top-right-radius: 0px;
+    }
+
+}
+
 	
-	.coffee--images {
-		border-radius: 8px;
-		width: 520px;
-		height: auto;
-	}
-	
-	.text-container {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding: 1.5em;
-	}
-	
-	/* Change the direction of every even (2n) container */
-	.coffee--images--container:nth-child(even) {
-		flex-direction: row-reverse;
-	}
-	
-	/* Adjust image width for the even containers to prevent overflow */
-	.coffee--images--container:nth-child(even) .coffee--images {
-		width: auto;
-		max-width: 420px;
-	}
-}	
 	
 
 /* #coffee-box {
