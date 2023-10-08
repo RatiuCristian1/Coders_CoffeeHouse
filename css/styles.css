@@ -9,7 +9,7 @@
 body {
 	font-family: 'Open Sans', Arial, sans-serif;
 	margin: 0;
-	background-color: whitesmoke;
+	background-color: #fff;
 }
 
 html {
@@ -107,15 +107,6 @@ header {
 	background-color: black;
 }
 
-/* .page-header {
-	height: 35vh;
-	background: center 75% / cover no-repeat;
-} */
-
-/* .form-page-header {
-	 background-image: url('https://codeinstitute.s3-eu-west-1.amazonaws.com/CSSEssentials/table.jpg') 
-} */
-
 .text-center {
     text-align: center;
 }
@@ -137,13 +128,14 @@ strong {
 }
 
 nav {
-	padding: 1rem;
+	padding: 2.5rem;
 }
 
 nav > a {
 	text-decoration: none;
 	color: beige;
 	margin: 1rem;
+	font-size: 1.2rem;
 }
 
 nav > a:hover {
@@ -171,6 +163,7 @@ small {
 	.nav--container > a {
 		width: 100%;
 		padding: 0 1.5rem;
+		font-size: 1.2rem;
 	}
 }
 
@@ -275,40 +268,6 @@ small {
 
 }
 
-	
-	
-
-/* #coffee-box {
-	background-color: #6F4E37;
-    position: relative;
-	padding: 1.5em 0;
-	width: 250px;
-	height: auto;
-    left: 70px;
-    top: -15px;
-	color: #FFFFFF;
-	margin-bottom: 2rem;
-}
-
-#tea-box {
-	background-color: #13521f;
-	position: relative;
-	padding: 1.5em 0;
-	width: 250px;
-	height: auto;
-	color: #FFFFFF;
-}
-
-#cold-drinks-box {
-	background-color: rgb(143, 126, 114);
-    position: relative;
-	width: 250px;
-	height: auto;
-	color: #FFFFFF;
-    right: 70px;
-    top: -15px;
-	z-index: ;
-} */
 
 #coffee-box {
     background-color: #6F4E37;
@@ -358,11 +317,6 @@ small {
 }
 
 
-/* padding to allow for fixed footer */
-/* #contact {
-    margin-bottom: 50px;
-} */
-
 .contact-boxes-container {
     width: 66%;
     margin: 0 auto;
@@ -398,9 +352,6 @@ ul {
 	padding: 0;
 }
 
-#reasons li {
-    margin-top: 5%;
-}
 
 a:hover {
 	text-decoration: none;
@@ -455,26 +406,25 @@ footer {
 	padding: 1em;
 	text-align: center;
     width: 100%;
-    /* position: fixed; */
-    bottom: 0;
-    right: 0;
+	height: 200px;
 	z-index: 3;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
 }
 
 footer > span {
 	color: silver;
 }
 
-footer > a {
-	color: beige;
-	text-decoration: none;
-	padding: 0 15px;
-	font-size: 0.8rem;
-}
 
 footer > p {
 	color: silver;
+	font-size: 1.25rem;
+	margin: 0;
 }
+
 
 fieldset {
 	border: none;
@@ -558,9 +508,6 @@ label {
     margin-top: 15px;
 }
 
-#reasons li {
-    margin-top: 5%;
-}
 
 #terms {
     height: 200px;
@@ -595,26 +542,33 @@ label {
 	display: flex;
     justify-content: space-between;
     border: none;
-	margin-bottom: 150px;
+	/* margin-bottom: 75px; */
 }
 
 .bar {
     width: 25px;
-    height: 2500px;
+    height: auto;
     background-color: aliceblue;
-    /* border: 1px solid rgb(87, 86, 86); */
     position: relative;
-    /* left: 15px; */
     border: none;
-    /* rotate: 30deg;
-    top: -200px;
-    right: 500px; */
     
 }
 
 .bar1,
 .bar--last {
 	background-color: transparent;
+}
+
+.logo--container {
+	display: flex;
+}
+
+.coders--img {
+	width: 200px;
+	margin-left: auto;
+	position: relative;
+	top: -60px;
+	right: 100px;
 }
 
 @media screen and (max-width: 800px) { 
@@ -633,6 +587,8 @@ label {
 	img {
 		margin: 0;
 		padding: 0;
+		width: 30px;
+		height: 30px;
 	}
 
 	#drinks {
@@ -647,8 +603,6 @@ label {
 	.drinks-box {
 		width: 100%;
 		padding: 20px 0;
-		/* margin: 0 auto; */
-		
 	}
 
 	.drinks-box > h3 {
@@ -698,7 +652,7 @@ label {
 	}
 	.bar {
 		width: 15px;
-		height: 2500px;
+		height: auto;
 		background-color: aliceblue;
 		/* border: 1px solid rgb(87, 86, 86); */
 		position: relative;
@@ -715,11 +669,11 @@ label {
 		background-color: transparent;
 	}
 
-	/* .coffee-box {
-		margin: 0 auto;
-		border: 1px solid blue;
-		padding: 50px;
-	} */
-
-
+	.coders--img {
+		width: 100px;
+		margin-left: auto;
+		position: relative;
+		top: -20px;
+		right: 40px;
+	}
 }
