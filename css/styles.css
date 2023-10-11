@@ -25,10 +25,6 @@ h1 {
 	margin: 0;
 }
 
-h2 {
-	font-size: xx-large;
-}
-
 header {
 	color: beige;
 }
@@ -38,8 +34,10 @@ header > p {
 }
 
 header {
+	width: 100%;
 	background-color: black;
 }
+
 
 #drinks {
 	padding: 1rem 0;
@@ -266,6 +264,7 @@ small {
 		border-top-right-radius: 0px;
     }
 
+
 }
 
 
@@ -399,6 +398,10 @@ a:hover {
 		margin-bottom: 0.5em;
 	}
 
+	.coffee--images--container:last-child {
+		border: none;
+	}
+
 }
 
 footer {
@@ -474,11 +477,23 @@ select {
 }
 
 form {
-	width: 700px;
+	width: 100%;
 	padding: 25px;
 	border-radius: 8px;
 	margin: 25px auto;
 	background-color: white;
+}
+
+#feedback {
+	width: 100%;
+}
+
+.fieldset--container {
+	border: 1px solid red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 .block-label {
@@ -493,8 +508,11 @@ legend {
 }
 
 .float-left {
-    float: left;
+	border: 1px solid green;
+	height: 100px;
+	max-width: 250px;
 }
+
 
 .float-right {
     float: right;
@@ -588,7 +606,7 @@ label {
 		margin: 0;
 		padding: 0;
 		width: 30px;
-		height: 30px;
+		height: auto;
 	}
 
 	#drinks {
@@ -677,3 +695,4 @@ label {
 		right: 40px;
 	}
 }
+

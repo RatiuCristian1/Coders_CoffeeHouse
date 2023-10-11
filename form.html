@@ -15,10 +15,8 @@
 
 <body>
 	<header class="form-page-header page-header text-center">
-		<div class="vertical-center">
 			<h1>Win a years supply of coffee from Coders Coffeehouse</h1>
 			<p>Complete our survey for your chance to win!</p>
-		</div>
 	</header>
 
 	
@@ -31,7 +29,7 @@
 	
 	<form action="https://formdump.codeinstitute.net" method="POST">
 
-	<fieldset>
+	<fieldset class="fieldset--container">
 		<legend>Your details</legend>
 
 		<div class="float-left">
@@ -43,15 +41,17 @@
 			<input id="email-field" type="email" name="email" placeholder="Your email" required>
 		</div>
 
-		<label for="age" class="block-label">Age</label>
-		<select id="age" name="age" required>
-			<option value="under-20">Under 20</option>
-			<option value="20s">20-29</option>
-			<option value="30s">30-39</option>
-			<option value="40s">40-49</option>
-			<option value="50s">50-59</option>
-			<option value="60+">60+</option>
-		</select>
+		<div class="float-left">
+			<label for="age" class="block-label">Age</label>
+			<select id="age" name="age" required>
+				<option value="under-20">Under 20</option>
+				<option value="20s">20-29</option>
+				<option value="30s">30-39</option>
+				<option value="40s">40-49</option>
+				<option value="50s">50-59</option>
+				<option value="60+">60+</option>
+			</select>
+		</div>
 
 	</fieldset>
 
