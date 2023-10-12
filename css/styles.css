@@ -480,7 +480,12 @@ form {
 }
 
 #feedback {
-	width: 90%;
+	width: 100%;
+	height: 300px;
+}
+
+.form--feedback {
+	margin-top: 20px;
 }
 
 .fieldset--container {
@@ -504,11 +509,24 @@ legend {
 	margin: 20px 0 10px 0;
 }
 
+@media  screen and (max-width: 800px) {
+	.float-left { 
+		height: 100px;
+		width: 175px;
+		flex-grow: 1;
+		/* margin-left: 10px;	 */
+	}
+
+	#name-field {
+		margin-left: 10px;
+	}
+}
+
+
 .float-left { 
 	height: 100px;
-	max-width: 175px;
-	flex-grow: 1;
-	
+	max-width: 275px;
+	flex-grow: 1;	
 }
 
 #age,
@@ -546,6 +564,7 @@ label {
 
 .fieldset--products {
 	padding: 10px 20px;
+	margin-top: 20px;
 }
 
 .block-label {
@@ -579,6 +598,18 @@ label {
 		flex-direction: row;
 		justify-content: center;
 	}
+
+	.fieldset--container {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+		flex-basis: 1;
+		border: 1px solid rgb(36, 35, 35);
+		
+	}
+
+
 }
 
 
