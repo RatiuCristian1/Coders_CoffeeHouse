@@ -198,9 +198,18 @@ small {
 	/* padding: 20px; */
 }
 
+
+
 .coffee--anchor {
 	text-decoration: none;
 	cursor: pointer;
+}
+
+.coffee--anchor--tea {
+	max-width: 250px;
+	position: relative;
+	right: 150px;
+	text-decoration: none;
 }
 
 
@@ -268,14 +277,16 @@ small {
 #coffee-box {
     background-color: #6F4E37;
     position: relative;
-    padding: 1.5em 0;
+    padding: 3.5em 0;
     width: 250px;
-    height: auto;
-    left: 400px;
+    height: 300px;
+    left: 220px;
     top: 0; /* Remove the negative top value */
     color: #FFFFFF;
     margin-bottom: 2rem;
     z-index: 1;
+	border-radius: 10px;
+	line-height: 1.6;
 }
 
 #tea-box {
@@ -283,25 +294,29 @@ small {
     position: relative;
     padding: 1.5em 0;
     width: 250px;
-    height: auto;
+    height: 250px;
     color: #FFFFFF;
     top: -15px; /* Adjust top position */
     z-index: 2; /* Set a higher z-index to place it above coffee-box */
     margin-left: 320px; 
+	border-radius: 10px;
+	line-height: 1.6;
 }
 
 
 #cold-drinks-box {
 	background-color: rgb(37, 32, 28);
     position: relative;
-    padding: 1.5em 0;
+    padding: 3em 0;
     width: 250px;
-    height: auto;
-    right: 70px;
+    height: 300px;
+    right: -150px;
     top: 0;
     color: #FFFFFF;
     margin-bottom: 2rem;
-    z-index: 1
+    z-index: 1;
+	border-radius: 10px;
+	line-height: 1.6;
 }
 
 
@@ -731,7 +746,7 @@ label {
 		padding: 1.5em 0;
 		width: 250px;
 		height: auto;
-		left: 70px;
+		left: 60px;
 		top: -15px;
 		color: #FFFFFF;
 		margin-bottom: 2rem;
@@ -744,7 +759,7 @@ label {
 		padding: 1.5em 0;
 		width: 250px;
 		height: auto;
-		right: 70px;
+		right: 60px;
 		top: -15px;
 		margin-top: 2rem;
 	}
